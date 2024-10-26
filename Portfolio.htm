@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing:border-box;
+            text-decoration:none; 
+
+        }
+        header{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            padding:35px 12px;
+            background:linear-gradient(90deg, orange,white,green);
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index:100;
+
+        }
+        .logo{
+            color:red;
+            font-style: oblique;
+            font-size:50px;
+            
+            animation:head 5s infinite;
+
+        }
+        @keyframes head{
+            0%{color:red}
+            25%{color:blue}
+            50%{color:deeppink}
+            75%{color:black}
+            100%{color:white}
+        }
+        .navbar a{
+            font-size:25px;
+            color:blue;
+            font-weight:500px;
+            margin:20px;
+        }
+        .cont{
+            padding:20px;
+            background-color:white;
+            color:black;
+            border:2px solid transparent;
+            border-radius:10px;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+        .cont:hover{
+            background-color:orangered;
+        }
+        .main{
+            width:100%;
+            height:100vh;
+            display:flex;
+            align-items: center;
+            padding:20px;
+            background:linear-gradient(120deg,pink,purple,rgb(0, 170, 255)) ;
+            color:white;
+        }
+
+        
+        .home{
+            width:100%;
+            font-size:30px;
+            padding:20px;
+
+        }
+        .btn{
+            width:300px;
+            margin: 30px;
+            padding: 20px;
+            display: flex;
+            gap:30px;
+            
+           }
+           .btn1{
+            padding:20px;
+            background-color: black;
+            color:white;
+            border-radius:20px;
+            font-size: 17px;
+            font-style:italic;
+           }
+           .btn1:hover{
+            background-color: white;
+            color:deeppink;
+           }
+           .btn2{
+            padding: 20px;
+            background-color: black;
+            color:white;
+            border-radius:20px;
+            font-size: 17px;
+            font-style:italic;
+           }
+           .btn2:hover{
+            background-color:orangered ;
+            color:white;
+           }
+           .image-box img{
+            width: 500px;
+            border-radius: 50%;
+            position:absolute;
+            left:1100px;
+            top:150px;
+            right:20px;
+            height: 600px;
+           
+
+           }
+           .contact{
+            width: 100%;
+            height:100vh;
+            background-color: antiquewhite;
+            display:flex;
+            justify-content: right;
+            align-items: right;
+           }
+           .skills{
+            width: 890px;
+            height:100vh;
+            background-color:pink;
+
+           }
+           h3{
+            font-size: 60px;
+            font-style: oblique;
+            color:purple;
+            animation: skill 5s infinite;
+           }
+           @keyframes skill{
+            0%{color:yellow}
+            25%{color:red}
+            50%{color:blue}
+            75%{color:orange}
+            100%{color:yellow}
+           }
+           h4{
+            font-size: 30px;
+            font-style: normal;
+            color:black;
+            position: relative;
+            top:50px;
+            left:30px;
+           }
+           .progress{
+            width:600px;
+            height: 20px;
+            background-color:silver ;
+            border-radius: 30px;
+            position: relative;
+            top:60px;
+            left:60px;
+           }
+           .progressbar{
+            width:100%;
+            height:20px;
+            border-radius:30px;
+            background-color: blue;
+           }
+           #skill2{
+            font-size: 30px;
+            font-style: normal;
+            color:black;
+            position: relative;
+            top:70px;
+            left:30px;
+           }
+           .progress1{
+            width:600px;
+            height: 20px;
+            background-color:silver ;
+            border-radius: 30px;
+            position: relative;
+            top:70px;
+            left:60px;
+           
+           }
+           .progressbar1{
+            width:95%;
+            height:20px;
+            border-radius:30px;
+            background-color: blue;
+          
+           }
+           #skill3{
+            font-size: 30px;
+            font-style: normal;
+            color:black;
+            position: relative;
+            top:80px;
+            left:30px;
+           
+           }
+           .progress2{
+            width:600px;
+            height: 20px;
+            background-color:silver ;
+            border-radius: 30px;
+            position: relative;
+            top:100px;
+            left:60px;
+          
+           }
+           .progressbar2{
+            width:70%;
+            height:20px;
+            border-radius:30px;
+            background-color: blue;
+           }
+           #skill4{
+            font-size: 30px;
+            font-style: normal;
+            color:black;
+            position: relative;
+            top:100px;
+            left:30px;
+
+           }
+           .progress3{
+            width:600px;
+            height: 20px;
+            background-color:silver ;
+            border-radius: 30px;
+            position: relative;
+            top:120px;
+            left:60px;
+           }
+           .progressbar3{
+            width:50%;
+            height:20px;
+            border-radius:30px;
+            background-color: blue;
+           }
+           #skill5{
+            font-size: 30px;
+            font-style: normal;
+            color:black;
+            position: relative;
+            top:120px;
+            left:30px;
+           }
+           .progress4{
+            width:600px;
+            height: 20px;
+            background-color:silver ;
+            border-radius: 30px;
+            position: relative;
+            top:140px;
+            left:60px;
+
+           }
+
+           .progressbar4{
+            width:90%;
+            height:20px;
+            border-radius:30px;
+            background-color: blue;
+          
+
+           }
+           #skill6{
+            font-size: 30px;
+            font-style: normal;
+            color:black;
+            position: relative;
+            top:140px;
+            left:30px;
+           }
+           .progress5{
+            width:600px;
+            height: 20px;
+            background-color:silver ;
+            border-radius: 30px;
+            position: relative;
+            top:160px;
+            left:60px;
+           }
+           .progressbar5{
+            width:90%;
+            height:20px;
+            border-radius:30px;
+            background-color: blue;
+           }
+           #skill7{
+            font-size: 30px;
+            font-style: normal;
+            color:black;
+            position: relative;
+            top:160px;
+            left:30px;
+
+           }
+           .progress6{
+            width:600px;
+            height: 20px;
+            background-color:silver ;
+            border-radius: 30px;
+            position: relative;
+            top:180px;
+            left:60px;
+
+           }
+           .progressbar6{
+            width:90%;
+            height:20px;
+            border-radius:30px;
+            background-color: blue;
+           }
+           #skill8{
+            font-size: 30px;
+            font-style: normal;
+            color:black;
+            position: relative;
+            top:180px;
+            left:30px;
+           }
+           .progress7{
+            width:600px;
+            height: 20px;
+            background-color:silver ;
+            border-radius: 30px;
+            position: relative;
+            top:200px;
+            left:60px;
+
+           }
+           .progressbar7{
+            width:90%;
+            height:20px;
+            border-radius:30px;
+            background-color: blue;
+           }
+
+           .form{
+            width:800px;
+            height:820px;
+            background-image: url(b.jpg); 
+            
+           }
+           h1{
+            text-align: center;
+            font-size: 80px;
+            font-style: italic;
+            text-shadow: 10px 0px 5px yellow;
+            color:red;
+           }
+           input{
+            width: 400px;
+            height: 45px;
+            position: relative;
+            left:200px;
+            top:50px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px;
+            
+           }
+           #input2{
+            width: 400px;
+            height: 45px;
+            position: relative;
+            left:200px;
+            top:90px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px;
+
+           }
+           #input3{
+            width: 400px;
+            height: 45px;
+            position: relative;
+            left:200px;
+            top:130px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px;
+           
+           }
+           #input4{
+            width: 400px;
+            height: 145px;
+            position: relative;
+            left:200px;
+            top:170px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px;
+           
+           }
+           #input5{
+            width: 150px;
+            position: relative;
+            top:250px;
+            left:350px;
+            background-color:orange;
+            color:white
+           }
+           .last{
+            width:100%;
+            height:300vh;
+            background:linear-gradient(120deg, gold,pink,blue);
+           }
+           .project1{
+            width:750px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            top:20px;
+            left:380px;
+           }
+           .project2{
+               width:750px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            top:0px;
+            left:380px;
+         
+
+           }
+            .project3{
+               width:750px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            top:20px;
+            left:380px;
+           }
+           .project4{
+               width:750px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            top:20px;
+            left:380px;
+           }
+           footer{
+            width:100%;
+            height:150px;
+            background-color: black;
+           } 
+           h5{
+            color:white;
+            font-size: 30px;
+            font-style:italic
+           }
+           img{
+            width:30px;
+            height:40px;
+            position: relative;
+            top:40px;
+            left:90px;
+           }
+           #img2{
+            position:relative;
+            left:140px;
+           } 
+           #img3{
+            position:relative;
+            left:  170px;      
+           }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#"class="logo">Personal portfolio</a>
+        <nav class="navbar">
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">service</a>
+            <a href="#">Projects</a>
+        </nav>
+        <a href="#" class="cont">Contact us</a>
+    </header>
+    <section class="main">
+        <div class="home">
+            <h2>Hi,</h2>
+            <h2>I am Irshad Alam</h2>
+            <p>I am simple thinking,hardworking and sincere in all assignments.<br> I always keep "I can do it, it is possible" approach for any assignment. <br>I like challenging tasks, job and always put forth my best to achievve my goal.</p>
+            <div class="btn">
+                <button class="btn1">Hire me</button>
+                <button class="btn2" >Resume</button>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="alam.jpg"></img>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="skills">
+            <h3>Technical skills:-</h3>
+            <h4>👉HTML</h4>
+            <div class="progress">
+                <div class="progressbar"></div>
+            </div>
+            <h4 id="skill2">👉CSS</h4>
+            <div class="progress1">
+                <div class="progressbar1"></div>
+            </div>
+            <h4 id="skill3">👉Javascript</h4>
+            <div class="progress2">
+                <div class="progressbar2"></div>
+            </div>
+        <h4 id="skill4">👉C programming</h4>
+        <div class="progress3">
+            <div class="progressbar3"></div>
+        </div>
+        <h4 id="skill5">👉CompTia A+ & N+</h4>
+        <div class="progress4">
+            <div class="progressbar4"></div>
+        </div>
+        <h4 id="skill6">👉Core python</h4>
+        <div class="progress5">
+            <div class="progressbar5"></div>
+        </div>
+        <h4 id="skill7">👉Typing</h4>
+        <div class="progress6">
+            <div class="progressbar6"></div>
+        </div>
+        <h4 id="skill8">👉MS EXCEL</h4>
+        <div class="progress7">
+            <div class="progressbar7"></div>
+        </div>
+           
+        </div>
+        <div class="form">
+            <h1>Contact me</h1><hr>
+            <input type="text" name="username" placeholder="Full name">
+            <br>
+            <input id="input2"  type="Emai" name="Email" placeholder="Email"><br>
+            <input type="number" name="mobilenumber" placeholder="Enter mobilenumber" id="input3"><br>
+            <textarea name="textarea" id="input4" placeholder="your message"></textarea><br>
+            <input type="submit" value="send message" id="input5">
+                
+
+        </div>
+    </section>
+    <section class="last">
+        <h1>My projects</h1>
+         <h3>Hospital Management system</h3>
+         <div class="project1">
+            <video src="hospitalvideo.mp4" controls="controls" autoplay="autoplay" width="720px" height="500px"></video>
+         </div>
+         <h3>Even & Odd finder</h3>
+         <div class="project2">
+            <video src="even_odd.mp4" controls="controls" autoplay="autoplay" width="720px" height="500px"></video>
+         </div>
+         <h3>Alphabet & Consonant Finder</h3>
+         <div class="project3">
+            <video src="Check.mp4" controls="controls" autoplay="autoplay" width="720px" height="500px"></video>
+         </div>
+         <h3>Login Form</h3>
+         <div class="project4">
+            <video src="login.mp4" controls="controls" autoplay="autoplay" width="720px" height="500px"></video>
+         </div>
+    </section>
+    <footer>
+        <h5>Follow me on : -</h5>
+        <a href="https://www.instagram.com/irshadalamjnps?igsh=MTlvYnBmNHZtdHRnZg=="><img src="instagram1.webp"></a>
+        <a href="https://www.facebook.com/profile.php?id=100070081823020&mibextid=ZbWKwL"><img src="facebook.png" id="img2"></a>
+        <a href="https://www.linkedin.com/in/irshad-alam-98ab172b9"><img src="linkdin.png" id="img3"></a>
+    </footer>
+
+    
+</body>
+</html>
